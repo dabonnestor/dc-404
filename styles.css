@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 6.4rem;
+  min-height: 100vh;
+  padding: 3.2rem 6.4rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.6rem;
+  }
+}
+
+.header {
+  font-family: "Inconsolata", monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.main {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main .main__col-1 .image {
+  max-width: 54rem;
+}
+
+.main .main__col-2 h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #333333;
+  max-width: 58.8rem;
+}
+
+@media (max-width: 768px) {
+  .main .main__col-2 h1 {
+    font-size: 4.8rem;
+  }
+}
+
+.main .main__col-2 p {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  max-width: 38.2rem;
+  margin-top: 3.2rem;
+}
+
+@media (max-width: 768px) {
+  .main .main__col-2 p {
+    font-size: 1.8rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: #333333;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  padding: 2.4rem 3.2rem;
+}
+
+.main .main__col-2 button {
+  margin-top: 6.4rem;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333333;
+}
