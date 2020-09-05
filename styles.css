@@ -11,6 +11,8 @@ html {
 
 body {
   font-family: "Space Mono", monospace;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 h1,
@@ -21,7 +23,6 @@ h5,
 h6,
 p {
   margin: 0;
-  line-height: 1.5;
 }
 
 .container {
@@ -43,7 +44,7 @@ p {
   font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #333333;
+  color: #333;
 }
 
 .image {
@@ -54,9 +55,9 @@ p {
 }
 
 .main {
-  align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-self: center;
   gap: 3.2rem;
 }
 
@@ -66,24 +67,24 @@ p {
   }
 }
 
-.main .main__col-1 .image {
+.main__col-1 .image {
   max-width: 54rem;
 }
 
-.main .main__col-2 h1 {
+.main__col-2 .heading {
   font-size: 6.4rem;
   font-weight: 700;
-  color: #333333;
+  color: #333;
   max-width: 58.8rem;
 }
 
 @media (max-width: 768px) {
-  .main .main__col-2 h1 {
+  .main__col-2 .heading {
     font-size: 4.8rem;
   }
 }
 
-.main .main__col-2 p {
+.main__col-2 .text {
   font-size: 2.4rem;
   font-weight: 400;
   color: #4f4f4f;
@@ -92,23 +93,23 @@ p {
 }
 
 @media (max-width: 768px) {
-  .main .main__col-2 p {
+  .main__col-2 .text {
     font-size: 1.8rem;
   }
 }
 
 .button {
   display: inline-block;
-  background-color: #333333;
+  background-color: #333;
   font-size: 1.4rem;
   font-weight: 700;
-  color: #fff;
   text-transform: uppercase;
+  color: #fff;
   border: 0;
   padding: 2.4rem 3.2rem;
 }
 
-.main .main__col-2 .button {
+.main__col-2 .button {
   margin-top: 6.4rem;
 }
 
@@ -117,5 +118,5 @@ p {
   font-size: 1.4rem;
   font-weight: 600;
   text-align: center;
-  color: #333333;
+  color: #333;
 }
