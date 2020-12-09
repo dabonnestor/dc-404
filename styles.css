@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 *,
@@ -10,8 +9,8 @@ html {
 }
 
 body {
-  font-family: "Space Mono", monospace;
-  font-size: 1.6rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
   line-height: 1.5;
 }
 
@@ -40,7 +39,7 @@ p {
 }
 
 .header {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   font-size: 2.4rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -114,7 +113,7 @@ p {
 }
 
 .footer {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   text-align: center;
